@@ -1,0 +1,117 @@
+.hero {
+    min-height: calc(100vh - 85px);
+    background: linear-gradient(180deg, #fde1ff 0%, #e1ffea22 60%);
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    line-height: 1.1;
+    z-index: 2;
+}
+
+.hero-left h2 {
+    color: #090909;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.hero-left p {
+    color: #171717;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+.hand-hand-icon {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hand-hand-icon img {
+    width: 75px;
+    object-fit: contain;
+}
+
+.hero-latest-btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    width: 280px;
+    height: 64px;
+    border-radius: 50px;
+    margin-top: 25px;
+    background: #ff4141;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(255, 65, 65, 0.3);
+    transition: all 0.3s ease;
+}
+
+.hero-latest-btn img {
+    width: 16px;
+    transition: transform 0.3s ease;
+}
+
+.hero-latest-btn:hover {
+    background: #e63838;
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(255, 65, 65, 0.45);
+}
+
+.hero-latest-btn:hover img {
+    transform: translateX(6px);
+}
+
+.hero-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.hero-right img {
+    max-height: 560px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.12));
+    transition: transform 0.4s ease;
+}
+
+.hero-right img:hover {
+    transform: scale(1.02);
+}
+
+@media (max-width: 1024px) {
+    .hero {
+        padding: 40px 5%;
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+    }
+
+    .hero-left {
+        align-items: center;
+    }
+
+    .hero-left p {
+        font-size: 55px;
+    }
+
+    .hero-right img {
+        max-height: 400px;
+        margin-top: 30px;
+    }
+}
