@@ -1,0 +1,121 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding-top: 40px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo p {
+    color: #171717;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.footer-links {
+    display: flex;
+    list-style: none;
+    gap: 45px;
+    color: #252525;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.footer-links li:hover {
+    color: #ff4141;
+}
+
+.footer-social-icon {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-icon-container {
+    padding: 10px;
+    padding-bottom: 6px;
+    background: #fbfbfb;
+    border: 1px solid #ebebeb;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.footer-icon-container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    border-color: #ff4141;
+}
+
+.footer-icon-container img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.footer-copy-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+    font-size: 16px;
+}
+
+.footer-copy-right hr {
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 2px;
+    background: #c7c7c7;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 800px) {
+    .footer {
+        gap: 30px;
+    }
+
+    .footer-links {
+        gap: 25px;
+        font-size: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer-logo p {
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-links {
+        gap: 15px;
+        font-size: 14px;
+    }
+
+    .footer-copy-right {
+        font-size: 13px;
+    }
+
+    .footer-copy-right hr {
+        width: 90%;
+    }
+}
