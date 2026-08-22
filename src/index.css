@@ -4,8 +4,10 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+html, body {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 500;
   font-style: normal;
+  overflow-x: hidden;
+  width: 100%;
 }

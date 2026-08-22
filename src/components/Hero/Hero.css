@@ -115,3 +115,38 @@
         margin-top: 30px;
     }
 }
+
+@media (max-width: 600px) {
+    .hero {
+        padding: 30px 4%;
+    }
+
+    .hero-left h2 {
+        font-size: 18px;
+    }
+
+    .hero-left p {
+        font-size: 36px;
+    }
+
+    .hand-hand-icon img {
+        width: 38px;
+    }
+
+    .hero-latest-btn {
+        width: 200px;
+        height: 50px;
+        font-size: 15px;
+        margin-top: 15px;
+    }
+
+    .hero-latest-btn img {
+        width: 13px;
+    }
+
+    .hero-right img {
+        max-height: 280px;
+        max-width: 100%;
+        margin-top: 20px;
+    }
+}

@@ -1,11 +1,11 @@
-import p5_img from '../assets/1.avif'
-import p6_img from '../assets/2.webp'
-import p7_img from '../assets/3.jfif'
-import p8_img from '../assets/4.avif'
-import p9_img from '../assets/5.avif'
-import p10_img from '../assets/6.webp'
-import p11_img from '../assets/7.jpg'
-import p12_img from '../assets/8.avif'
+import p5_img from '../assets/men3.webp'
+import p6_img from '../assets/women3.jpg'
+import p7_img from '../assets/men4.jfif'
+import p8_img from '../assets/women4.webp'
+import p9_img from '../assets/men5.webp'
+import p10_img from '../assets/women5.webp'
+import p11_img from '../assets/men6.webp'
+import p12_img from '../assets/women6.webp'
 
 let new_collections = [
     { id: 5, name: "T-Shirt", category: "men", image: p5_img, new_price: 45.0, old_price: 70.0 },

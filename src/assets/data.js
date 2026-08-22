@@ -1,40 +1,40 @@
-import p1_img from '../assets/p1.jfif'
-import p2_img from '../assets/p2.jfif'
-import p3_img from '../assets/p3.avif'
-import p4_img from '../assets/p4.jfif'
+import p1_img from '../assets/women1.jfif'
+import p2_img from '../assets/women2.jpg'
+import p3_img from '../assets/women3.jpg'
+import p4_img from '../assets/women4.webp'
 
 let data_product = [
     {
         id: 1,
-        name: "Yellow Flared Dress",
+        name: "Kurti",
         category: "women",
         image: p1_img,
         new_price: 50.0,
         old_price: 80.5
     },
     {
-        id: 2,
-        name: "Summer Bodycon Dress",
+        id: 3,
+        name: "Saree",
         category: "women",
         image: p2_img,
-        new_price: 60.0,
-        old_price: 90.5
-    },
-    {
-        id: 3,
-        name: "Anarkali Kurti Suit",
-        category: "women",
-        image: p3_img,
         new_price: 75.0,
         old_price: 120.0
     },
     {
-        id: 4,
-        name: "Floral Print Dress",
+        id: 6,
+        name: "Dress",
+        category: "women",
+        image: p3_img,
+        new_price: 85.0,
+        old_price: 130.0
+    },
+    {
+        id: 8,
+        name: "Leggings",
         category: "women",
         image: p4_img,
-        new_price: 90.0,
-        old_price: 140.0
+        new_price: 55.0,
+        old_price: 100.0
     }
 ]
 

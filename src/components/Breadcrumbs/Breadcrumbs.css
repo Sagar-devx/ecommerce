@@ -1,0 +1,39 @@
+.breadcrum,
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #707070;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 25px 9%;
+    text-transform: capitalize;
+}
+
+.breadcrum img,
+.breadcrumbs img {
+    width: 8px;
+    height: 8px;
+    object-fit: contain;
+    opacity: 0.6;
+    margin: 0 2px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .breadcrum,
+    .breadcrumbs {
+        margin: 20px 5%;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 600px) {
+    .breadcrum,
+    .breadcrumbs {
+        margin: 15px 4%;
+        font-size: 12px;
+        gap: 6px;
+        flex-wrap: wrap;
+    }
+}

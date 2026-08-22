@@ -1,11 +1,20 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import "./NavBar.css";
 import logo from "../../assets/logo.webp";
 import cart from "../../assets/cart_icon.png";
 import { Link } from "react-router-dom";
+import { ShopContext } from "../../context/ShopContext";
 
 export const NavBar = () => {
   const [menu, setMenu] = useState("home");
+  const { getTotalCartItems } = useContext(ShopContext);
+  const userName = localStorage.getItem("user-name");
+
+  const handleLogout = () => {
+    localStorage.removeItem("user-name");
+    window.location.replace("/");
+  };
+
   return (
     <div className="navbar">
       <div className="nav-logo">
@@ -33,13 +42,22 @@ export const NavBar = () => {
         </li>
       </ul>
       <div className="nav-login-cart">
-        <Link to="/login">
-          <button>Login</button>
-        </Link>
+        {userName ? (
+          <div className="nav-user-profile">
+            <span>Hi, {userName}</span>
+            <button onClick={handleLogout} className="nav-logout-btn">
+              Logout
+            </button>
+          </div>
+        ) : (
+          <Link to="/login">
+            <button>Login</button>
+          </Link>
+        )}
         <Link to="/cart">
           <img src={cart} alt="" height="40px" />
         </Link>
-        <div className="nav-cart-count">0</div>
+        <div className="nav-cart-count">{getTotalCartItems()}</div>
       </div>
     </div>
   );
